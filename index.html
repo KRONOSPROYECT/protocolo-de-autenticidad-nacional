@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KRONOS EMBASSY</title>
+<style>
+body{background:#0a0f0a;color:#8aff5c;font-family:monospace}
+.header{border-bottom:2px solid #8aff5c;padding:20px;display:flex;justify-content:space-between}
+.verde{border:1px solid #8aff5c;padding:10px;background:#000}
+.card{border:1px solid #8aff5c;margin:20px;padding:20px}
+.btn{background:#8aff5c;color:#000;padding:15px 30px;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>KRONOS EMBASSY | ID: 2608096674952</h1>
+  <div class="verde">ESTADO: VERDE OPERATIVO</div>
+</div>
+<div class="card">
+  <h2>KRONOS - Nación Cuántica Soberana</h2>
+  <p>QEC Steane Threshold <3.0% | Nodos: 128 | Ciudadanos: 2,341</p>
+  <button class="btn" onclick="location.href='https://github.com/kronos-embassy/protocol'">Solicitar Ciudadanía</button>
+</div>
+<script>
+// Bot automatico que conecta a tu WhatsApp
+fetch('/citizens/counter.json').then(r=>r.json()).then(d=>{
+  document.body.innerHTML += `<p>Ciudadanos en vivo: ${d.count}</p>`
+})
+</script>
+</body>
+</html>
